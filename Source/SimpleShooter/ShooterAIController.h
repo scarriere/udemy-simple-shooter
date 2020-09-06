@@ -6,9 +6,6 @@
 #include "AIController.h"
 #include "ShooterAIController.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class SIMPLESHOOTER_API AShooterAIController : public AAIController
 {
@@ -25,5 +22,5 @@ private:
 	APawn* TargetPlayerPawn;
 
 	UPROPERTY(EditAnywhere)
-	float AcceptanceRadius = 200;
+	UBehaviorTree* AIBehavior;
 };
